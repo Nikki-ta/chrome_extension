@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Digital Notice Board</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main1">
+  <div id="header">
+    <marquee>Announcements: <b>Office trip coming soon...</b></marquee>
+  </div>
+  <div class="cont-1">
+    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRX7I5U-eas1o-exOQtkK3pIqz1VcqWFBwTZrcTo5gNV8o-5c9yPZ5bbycUj8CIPhrh8uOGhRhVghZ8/pubhtml?widget=true&amp;headers=false"></iframe>
+    <div class="poll-container">
+        <h1>Poll: Dish of the day</h1>
+        <form id="pollForm">
+            <label>
+                <input type="radio" name="color" value="Mutter Paneer" required> Mutter Paneer
+            </label>
+            <label>
+                <input type="radio" name="color" value="Rajma"> Rajma
+            </label>
+            <label>
+                <input type="radio" name="color" value="Dosa Sambhar"> Dosa Sambhar
+            </label>
+            <label>
+                <input type="radio" name="color" value="Idli"> Idli
+            </label>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="result" style="margin-top: 20px;"></div>
+    </div>
+</div>
+<div class="cont-2">
+    <div class="music-box">
+        <p>Relax and let the 
+            music soothe your soul!!</p>
+        <div class="spotify">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1Dk9SeguLL5qTnjfyX5VnZ?utm_source=generator&theme=0" width="100%" height="200" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+    <div class="youtube">
+        <iframe width="100%" height="152" src="https://www.youtube.com/embed/LzORe8Qc7rM?si=UqOoN3AyYNq3QPi5&amp;start=20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    </div>
+    <div class="slides">
+        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQd0pw9zSVcz2bMErSybUfMm8z-bRJPULZ5o5SFI4svzUgrA3fKzJuRV17MMYcoZCihtezXYW7Tsguf/embed?start=true&loop=true&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    </div>
+    
+</div>
+<div class="cont-3">
+    <div class="pomodoro-timer" id="pomodoro-timer">
+        <h2>Boost productivity with focused Pomodoro sessions!</h2>
+        <p id="time">25:00</p>
+        <div class="buttons">
+            <button id="start"><b>Start</b></button>
+            <button id="stop"><b>Stop</b></button>
+            <button id="reset"><b>Reset</b></button>
+            <button id="short-break"><b>Short Break</b></button>
+            <button id="long-break"><b>Long Break</b></button>
+        </div>
+    </div>
+    <div class="forms">
+        <iframe src="https://docs.google.com/document/d/e/2PACX-1vRjqdVw-sw25qd7nahsSKn3oT9TiUVEri-iMzOhCVYZMTTjQuNRXVdb9dyVp4c6tE8AiKwzmDUhVOyv/pub?embedded=true"></iframe>
+    </div>
+</div>
+<div class="cont-4">
+    <div class="calendar">
+        <iframe src="https://calendar.google.com/calendar/embed?src=33b2901df640351a318ac7b36013fb222c7f8c03673f7c5d6878892256924d59%40group.calendar.google.com&ctz=Asia%2FKolkata" style="border: 0" width="750" height="600" frameborder="0" scrolling="no"></iframe>
+    </div>
+</div>
+<div class="cont-5">
+    <div class="tracker">
+        <h1>Steps Tracker</h1>
+        <form id="stepsForm">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            <label for="steps">Steps:</label>
+            <input type="number" id="steps" name="steps" min="0" required>
+            <button type="submit">Add Data</button>
+        </form>
+        <div id="results">
+            <h2>Daily Steps</h2>
+            <ul id="stepsList"></ul>
+            <div id="healthSummary"></div>
+        </div>
+    </div>
+    <div class="btracker">
+        <h1>Book Tracker</h1>
+        <form id="bookForm">
+            <label for="bookTitle">Book Title:</label>
+            <input type="text" id="bookTitle" name="bookTitle" required>
+            <label for="quote">Quote:</label>
+            <textarea id="quote" name="quote" rows="4" required></textarea>
+            <label for="source">Source (Amazon/Goodreads link):</label>
+            <input type="url" id="source" name="source" required>
+            <button type="submit">Add Book</button>
+        </form>
+        <div id="bookList">
+            <h2>Books Read</h2>
+            <ul id="books"></ul>
+        </div>
+    </div>
+</div>
+<div class="cont-6">
+    <div class="meet-container">
+        <div class="con">
+        <img src="meet.png" alt="">
+        <h1>Join a Google Meet</h1>
+    </div>
+        <a href="https://meet.google.com/" target="_blank" class="meet-button">Join Google Meet</a>
+    </div>
+    
+</div>
+</div>
+  <div id="sidebar">
+    <h2>Navigation Menu</h2>
+  </div>
+  <div id="mainContent">
+    <div class="widget" id="googleSlides">Google Slide</div>
+    <div class="widget" id="pomodoroTimer">Pomodoro Timer</div>
+    <div class="widget" id="googleCalendar">Google Calendar</div>
+    <div class="widget" id="googleMeet">Google Meet Widget</div>
+    <div class="widget" id="bookQuote">Book + Quote</div>
+  </div>
+  <div id="rightSidebar">
+    <div class="widget" id="googleSpreadsheet">Google Spreadsheet</div>
+    <div class="widget" id="googleForm">Google Form</div>
+    <div class="widget" id="music">Music</div>
+    <div class="widget" id="poll"> Poll - Run by Admin</div>
+    <div class="widget" id="stepsTracker">Steps/Health Tracker</div>
+  </div>
+  <audio id="notification-sound" src="notify.mp3" preload="auto"></audio>
+  <script src="popup.js"></script>
+</body>
+</html>
+
+
+
